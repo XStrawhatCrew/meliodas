@@ -1,0 +1,120 @@
+body {
+    font-family: "Helvetica",Arial,sans-serif;
+    font-size: 12px !important;
+}
+
+.header, .header-top {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background: #ff9900;
+    z-index: 9;
+}
+
+.top-header {
+    width: 100%;
+    height: 50px;
+}
+
+.header .header-top .logo a, .header .header-top .logo a img {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+#header-nav {
+    margin-left: 110px;
+}
+
+#header-nav a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+#header {
+    width: 100%;
+    height: 50px;
+}
+
+#main-nav {
+    width: 100%;
+    height: 50px;
+    background: #edf0f2;
+}
+
+#main-nav .container, #main-nav .container .row {
+    height: 100%;
+    position: relative;
+}
+
+.nav-left {
+    position: relative;
+    height: 100%;
+}
+
+#main-nav .nav-ul {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-left: 95px;
+}
+
+#main-nav .nav-ul .glyphicon-home {
+    font-size: 21px;
+}
+
+#main-nav .nav-ul a {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 16px 17px 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+#main-nav .nav-ul li {
+    float: left;
+    height: 100%;
+}
+
+#main-nav .nav-ul li.active, #main-nav .nav-ul li:hover {
+    background: #ff9900;
+}
+
+#main-nav .nav-ul li.active a, #main-nav .nav-ul li:hover a {
+    color: #FFF;:
+}
+
+.nav-separator {
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background: transparent url("../img/link-footer.png") no-repeat scroll 0% 0%;
+    top: 12px;
+    right: -1px;
+    padding: 0 !important;
+}
+
+.item-top-header {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+.item-top-header span, .item-top-header a {
+    padding: 9px 12px 0;
+    display: inline-block;
+    height: 100%;
+}
