@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="meliodas:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="meliodas-1.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="meliodas:war exploded" />
+    </root>
+  </artifact>
+</component>

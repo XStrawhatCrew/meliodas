@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>   
+  
+<!DOCTYPE tiles-definitions PUBLIC   
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+ "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">   
+  
+<tiles-definitions>  
+    <!-- Administrator-->
+    <definition name="index_admin" template="layout_admin.jsp">   
+        <put-attribute name="title" value="Home - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/admin/home_admin.jsp"/>   
+    </definition>  
+     
+    <definition name="show_complaints_admin" template="layout_admin.jsp">   
+        <put-attribute name="title" value="Show Complaints - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/admin/show_complaints_admin.jsp"/>   
+    </definition>
+    
+    <definition name="show_information_admin" template="layout_admin.jsp">   
+        <put-attribute name="title" value="Personal Information - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/admin/information_admin.jsp"/>   
+    </definition>
+    
+    <definition name="create_account_admin" template="layout_admin.jsp">   
+        <put-attribute name="title" value="Create Account - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/admin/create_account_admin.jsp"/>   
+    </definition>
+    
+    <definition name="show_all_complaints_admin" template="layout_admin.jsp">   
+        <put-attribute name="title" value="Personal Information - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/admin/show_all_complaints.jsp"/>   
+    </definition>
+    
+    <definition name="show_processing_complaints_admin" template="layout_admin.jsp">   
+        <put-attribute name="title" value="Personal Information - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/admin/show_processing_complaints_admin.jsp"/>   
+    </definition>
+    
+    <definition name="show_rejected_complaints_admin" template="layout_admin.jsp">   
+        <put-attribute name="title" value="Personal Information - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/admin/show_rejected_complaints_admin.jsp"/>   
+    </definition>
+    
+    <definition name="show_closed_complaints_admin" template="layout_admin.jsp">   
+        <put-attribute name="title" value="Personal Information - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/admin/show_closed_complaints_admin.jsp"/>   
+    </definition>
+    
+    <definition name="show_accounts" template="layout_admin.jsp">   
+        <put-attribute name="title" value="Show Accounts - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/admin/show_accounts.jsp"/>   
+    </definition>
+    
+    
+    <definition name="show_technical" template="layout_admin.jsp">   
+        <put-attribute name="title" value="Show Technical - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/admin/show_technical.jsp"/>   
+    </definition>
+    
+    <definition name="show_reports_admin" template="layout_admin.jsp">   
+        <put-attribute name="title" value="Show Technical - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/admin/show_reports_admin.jsp"/>   
+    </definition>
+    
+    <definition name="change_password_admin" template="layout_admin.jsp">   
+        <put-attribute name="title" value="Change Password - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/admin/change_password.jsp"/>   
+    </definition>
+    
+    
+    <!-- end Administrator-->
+    
+    <!-- Employee-->
+    <definition name="index_employee" template="layout_employee.jsp">   
+        <put-attribute name="title" value="Home - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/employee/home_employee.jsp"/>   
+    </definition>
+    
+    <definition name="show_information_employee" template="layout_employee.jsp">   
+        <put-attribute name="title" value="Information - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/employee/information_employee.jsp"/>   
+    </definition>
+    
+    <definition name="change_password_employee" template="layout_employee.jsp">   
+        <put-attribute name="title" value="Change Password - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/employee/change_password.jsp"/>   
+    </definition>
+   
+    <!-- end Employee-->
+    
+    <!--Technical-->
+    <definition name="index_technical" template="layout_technical.jsp">   
+        <put-attribute name="title" value="Home - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/technical/home_technical.jsp"/>   
+    </definition>
+    
+    <definition name="show_information_technical" template="layout_technical.jsp">   
+        <put-attribute name="title" value="Information - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/technical/information_technical.jsp"/>   
+    </definition>
+    
+    <definition name="show_history_complaints_technical" template="layout_technical.jsp">   
+        <put-attribute name="title" value="History - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/technical/show_history_complaints_technical.jsp"/>   
+    </definition>
+    <definition name="show_processing_complaints_technical" template="layout_technical.jsp">   
+        <put-attribute name="title" value="Show Processing Complaints - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/technical/show_processing_complaints_technical.jsp"/>   
+    </definition>
+    
+    <definition name="change_password_technical" template="layout_technical.jsp">   
+        <put-attribute name="title" value="Change Password - Mantech Helpdesk"/>   
+        <put-attribute name="main_content" value="/template/technical/change_password.jsp"/>   
+    </definition>
+    
+    <!--End Technical-->
+    
+    
+    
+</tiles-definitions> 

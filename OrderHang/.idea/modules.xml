@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OrderHang.iml" filepath="$PROJECT_DIR$/OrderHang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OrderHangEAR/OrderHangEAR.iml" filepath="$PROJECT_DIR$/OrderHangEAR/OrderHangEAR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OrderHangEJB/OrderHangEJB.iml" filepath="$PROJECT_DIR$/OrderHangEJB/OrderHangEJB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OrderHangWeb/OrderHangWeb.iml" filepath="$PROJECT_DIR$/OrderHangWeb/OrderHangWeb.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="OrderHangEJB:ejb">
+    <output-path>$PROJECT_DIR$/OrderHangEJB/target</output-path>
+    <root id="archive" name="orderhang-ejb-1.0-SNAPSHOT.jar">
+      <element id="artifact" artifact-name="OrderHangEJB:ejb exploded" />
+    </root>
+  </artifact>
+</component>

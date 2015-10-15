@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - orderhang@localhost" uuid="330c5d0f-f7de-4061-bc86-e16b3b5347d5">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>orderhang.*</schema-pattern>
+      <default-schemas>orderhang.*</default-schemas>
+    </data-source>
+  </component>
+</project>
