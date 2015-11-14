@@ -3,6 +3,21 @@ body {
     font-size: 12px !important;
 }
 
+body{
+    background: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+body.modal-open{
+    margin-left: -16px;
+}
+body.modal-open .header-top.scoll{
+    margin-left: 16px;
+}
+body.modal-open .fade.in{
+    overflow: hidden;
+}
+
 .clear {
     clear: both;
 }
@@ -242,3 +257,134 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 /* End Style Register body */
+
+/* Style Login Modal */
+body.modal-open .fade.in {
+    overflow: hidden;
+}
+
+.auth-area .modal-content {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    outline: none;
+}
+
+.auth-area .modal-dialog {
+    width: 400px;
+}
+
+.auth-area .modal-content .modal-header {
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    padding-bottom: 0;
+}
+
+.auth-area .modal-header {
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
+}
+
+.auth-area .modal-content .modal-body {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+.auth-area .modal-content .modal-footer {
+        padding-left: 30px;
+    padding-right: 30px;
+}
+
+.auth-area .modal-footer {
+    background: #f3f3f3;
+}
+
+.loading-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 40%;
+    opacity: 0.7;
+    background: #eee;
+}
+
+.loading-face #facebookG {
+    margin: 0 auto;
+}
+
+#facebookG {
+    width: 70px;
+}
+
+#blockG_1 {
+    -moz-animation-delay: 0.39s;
+    -webkit-animation-delay: 0.39s;
+    -ms-animation-delay: 0.39s;
+    -o-animation-delay: 0.39s;
+    animation-delay: 0.39s;
+}
+
+#blockG_2 {
+    -moz-animation-delay: 0.52s;
+    -webkit-animation-delay: 0.52s;
+    -ms-animation-delay: 0.52s;
+    -o-animation-delay: 0.52s;
+    animation-delay: 0.52s;
+}
+
+#blockG_3 {
+    -moz-animation-delay: 0.65s;
+    -webkit-animation-delay: 0.65s;
+    -ms-animation-delay: 0.65s;
+    -o-animation-delay: 0.65s;
+    animation-delay: 0.65s;
+}
+
+.facebook_blockG {
+    background-color: #FFFFFF;
+    border: 2px solid #5577ba;
+    float: left;
+    height: 50px;
+    margin-left: 4px;
+    width: 13px;
+    opacity: 0.1;
+    -moz-animation-name: bounceG;
+    -moz-animation-duration: 1.3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: linear;
+    -moz-transform: scale(0.7);
+    -webkit-animation-name: bounceG;
+    -webkit-animation-duration: 1.3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: linear;
+    -webkit-transform: scale(0.7);
+    -ms-animation-name: bounceG;
+    -ms-animation-duration: 1.3s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-direction: linear;
+    -ms-transform: scale(0.7);
+    -o-animation-name: bounceG;
+    -o-animation-duration: 1.3s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: linear;
+    -o-transform: scale(0.7);
+    animation-name: bounceG;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    transform: scale(0.7);
+}
+/* End Style Login Modal */

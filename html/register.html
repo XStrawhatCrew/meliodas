@@ -26,9 +26,86 @@
                         <span>Phản ánh dịch vụ: windluffy@meliodas.vn</span>
                     </div>
                     <div class="col-md-2 col-lg-2 col-sm-2 item-top-header">
-                        <div id="header-auth" class="">
+                        <div id="header-auth" class="auth-area">
                             <a href="#">Đăng nhập</a>
                             <a href="#">Đăng ký</a>
+                            <div class="modal fade in" id="myModallogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+                                <div class="modal-dialog reset-password-block">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            <h4 class="modal-title" id="myModalLabel"><p class="red-normal">Đăng nhập</p>
+                                                <a href="" class="_openModalRegis">Đăng ký</a></h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form role="form" method="POST" class="fr-login" name="fr-login" id="frm-login-top">
+                                                    <div class="regis-item">
+                                                        <p class="red-normal re-error err-ajax"></p>
+                                                        <span class="normal name-label">Tài khoản<span class="red-normal"> * </span></span>
+                                                        <input name="credential" id="exampleInput" class="form-control form-myinput" type="text" placeholder="Tài khoản hoặc email đã kích hoạt">
+                                                        <p class="red-normal re-error err-cred"></p>
+                                                    </div>
+
+                                                    <div class="regis-item" style="padding: 0px; margin: 0px">
+                                                        <span class="normal name-label">Mật khẩu<span class="red-normal"> * </span></span>
+                                                        <input name="password" id="exampleInput" class="form-control form-myinput _inputPass" type="password" placeholder="Mật khẩu">
+                                                        <p class="red-normal re-error err-pass"></p>
+                                                    </div>
+                                                    <div class="regis-item made">
+                                                        <p class="_normal">
+                                                            <label class="normal">
+                                                                <input type="checkbox" class="login-checkbox col-lg-2 col-md-2 col-sm-2" id="remember" name="remember" checked="true">
+                                                                Ghi nhớ đăng nhập
+                                                            </label>
+                                                        </p>
+                                                        <button id="bt-login-top" type="button" class="btn btn-blue btn-lg btn-login pull-right" data-click="false">Đăng nhập</button>
+                                                        <button id="btnShow" type="button" class="btn btn-blue btn-lg btn-login pull-right disable _hide" data-click="false">Đang xử lý...</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="pull-left click-resetpass">Quên mật khẩu?</a>
+                                                <p class="normal facebook pull-right" style="cursor: pointer" onclick="fb_login()">Đăng nhập bằng facebook<span class="icon-facebook">login facebook</span></p>
+                                                <br>
+                                                <div class="reset-password _hide">
+                                                    <p class="normal email-text">Nhập email hoặc tên đăng nhập của bạn</p>
+                                                    <div id="submit_email_reset_pass">
+
+                                                        <div class="">
+                                                            <input id="_email_request" class="form-control form-myinput" type="text" placeholder="Vui lòng nhập email hoặc tên tài khoản trên SeuDo.vn">
+
+                                                        </div>
+                                                        <br>
+                                                        <input id="_csrf" name="_csrf" value="41bb23aec05c04b1222fc4c495f00034" type="hidden">
+                                                        <p class="reset-password-submit">
+                                                            <button class="btn btn-blue btn-login _request" type="button" data-id-form="submit_email_reset_pass" data-toggle="modal">
+                                                                Lấy lại mật khẩu
+                                                            </button>
+                                                            <button class="btn btn-blue btn-login _request_before disable hidden" type="button" data-toggle="modal">
+                                                                Lấy lại mật khẩu
+                                                            </button>
+                                                        </p>
+                                                        <div class="alert alert-info col-md-12 _notifForgotPass _hide">
+                                                            <p class="_notifForgot"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="loading-face" data-box="login" style="display: none">
+                                                <div id="facebookG">
+                                                    <div id="blockG_1" class="facebook_blockG">
+                                                    </div>
+                                                    <div id="blockG_2" class="facebook_blockG">
+                                                    </div>
+                                                    <div id="blockG_3" class="facebook_blockG">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div>
                         </div>
                     </div>
                 </div>
