@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: "Helvetica",Arial,sans-serif;
     font-size: 12px !important;
@@ -222,3 +223,395 @@ body {
 .sc-content-item-content span {
     font-size: 13px;
 }
+=======
+body {
+    font-family: "Helvetica",Arial,sans-serif;
+    font-size: 12px !important;
+}
+
+body{
+    background: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+body.modal-open{
+    margin-left: -16px;
+}
+body.modal-open .header-top.scoll{
+    margin-left: 16px;
+}
+body.modal-open .fade.in{
+    overflow: hidden;
+}
+
+.clear {
+    clear: both;
+}
+.header, .header-top {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background: #ff9900;
+    z-index: 9;
+}
+
+.top-header {
+    width: 100%;
+    height: 50px;
+}
+
+.header .header-top .logo a, .header .header-top .logo a img {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+#header-nav {
+    margin-left: 110px;
+}
+
+#header-nav a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+#header {
+    width: 100%;
+    height: 50px;
+}
+
+#main-nav {
+    width: 100%;
+    height: 50px;
+    background: #edf0f2;
+}
+
+#main-nav .container, #main-nav .container .row {
+    height: 100%;
+    position: relative;
+}
+
+.nav-left {
+    position: relative;
+    height: 100%;
+}
+
+#main-nav .nav-ul {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-left: 95px;
+}
+
+#main-nav .nav-ul .glyphicon-home {
+    font-size: 21px;
+}
+
+#main-nav .nav-ul a {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 16px 17px 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+#main-nav .nav-ul li {
+    float: left;
+    height: 100%;
+}
+
+#main-nav .nav-ul li.active, #main-nav .nav-ul li:hover {
+    background: #ff9900;
+}
+
+#main-nav .nav-ul li.active a, #main-nav .nav-ul li:hover a {
+    color: #FFF;:
+}
+
+.nav-separator {
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background: transparent url("../img/link-footer.png") no-repeat scroll 0% 0%;
+    top: 12px;
+    right: -1px;
+    padding: 0 !important;
+}
+
+.item-top-header {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+.item-top-header span, .item-top-header a {
+    padding: 9px 12px 0;
+    display: inline-block;
+    height: 100%;
+}
+
+#wrapper-body {
+    margin-top: 40px;
+    /*background-color: #00a652;*/
+    height: 600px;
+}
+
+#support-customer {
+    width: 185px;
+    height: 580px;
+    display: none;
+}
+
+.support-customer-container {
+    position: fixed;
+    top: 140px;
+    right: 0;
+}
+
+#support-customer-icon {
+    width: 50px;
+    background-color: #C93825;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#support-customer-icon p {
+    color: #FFF;
+    display: block;
+    -webkit-writing-mode: vertical-rl;
+    text-transform: uppercase;
+    padding: 30px 14px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#support-customer-icon p:hover #support-customer {
+    display: block;
+}
+
+.sc-title {
+    padding: 30px 10px 15px;
+    background: #C93825;
+    position: relative;
+}
+
+.sc-title img {
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: -26px;
+    left: 67px;
+}
+
+.sc-title h2 {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sc-content-item {
+    background-color: #FFF;
+}
+
+.sc-content-item h3 {
+    font-size: 14px;
+    padding: 5px;
+    background: #FF9900;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 0 !important;
+}
+
+.sc-content-item-content {
+    padding: 10px;
+}
+
+.sc-content-item-content a {
+    float: left;
+    padding-right: 10px;
+}
+
+.sc-content-item-content a img {
+    height: 20px;
+}
+
+.sc-content-item-content p {
+    color: #0072bc;
+    font-weight: bold;
+    padding-bottom: 2px;
+    margin: 0;
+    font-size: 13px;
+}
+
+.sc-content-item-content span {
+    font-size: 13px;
+}
+
+/* Style Register body */
+.form-box {
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+.text-center {
+    text-align: center;
+}
+
+.content-title .title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #888;
+    margin: 10px 0px;
+    font-family: "Open Sans", sans-serif;
+}
+/* End Style Register body */
+
+/* Style Login Modal */
+body.modal-open .fade.in {
+    overflow: hidden;
+}
+
+.auth-area .modal-content {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    outline: none;
+}
+
+.auth-area .modal-dialog {
+    width: 400px;
+}
+
+.auth-area .modal-content .modal-header {
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    padding-bottom: 0;
+}
+
+.auth-area .modal-header {
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
+}
+
+.auth-area .modal-content .modal-body {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+.auth-area .modal-content .modal-footer {
+        padding-left: 30px;
+    padding-right: 30px;
+}
+
+.auth-area .modal-footer {
+    background: #f3f3f3;
+}
+
+.loading-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 40%;
+    opacity: 0.7;
+    background: #eee;
+}
+
+.loading-face #facebookG {
+    margin: 0 auto;
+}
+
+#facebookG {
+    width: 70px;
+}
+
+#blockG_1 {
+    -moz-animation-delay: 0.39s;
+    -webkit-animation-delay: 0.39s;
+    -ms-animation-delay: 0.39s;
+    -o-animation-delay: 0.39s;
+    animation-delay: 0.39s;
+}
+
+#blockG_2 {
+    -moz-animation-delay: 0.52s;
+    -webkit-animation-delay: 0.52s;
+    -ms-animation-delay: 0.52s;
+    -o-animation-delay: 0.52s;
+    animation-delay: 0.52s;
+}
+
+#blockG_3 {
+    -moz-animation-delay: 0.65s;
+    -webkit-animation-delay: 0.65s;
+    -ms-animation-delay: 0.65s;
+    -o-animation-delay: 0.65s;
+    animation-delay: 0.65s;
+}
+
+.facebook_blockG {
+    background-color: #FFFFFF;
+    border: 2px solid #5577ba;
+    float: left;
+    height: 50px;
+    margin-left: 4px;
+    width: 13px;
+    opacity: 0.1;
+    -moz-animation-name: bounceG;
+    -moz-animation-duration: 1.3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: linear;
+    -moz-transform: scale(0.7);
+    -webkit-animation-name: bounceG;
+    -webkit-animation-duration: 1.3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: linear;
+    -webkit-transform: scale(0.7);
+    -ms-animation-name: bounceG;
+    -ms-animation-duration: 1.3s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-direction: linear;
+    -ms-transform: scale(0.7);
+    -o-animation-name: bounceG;
+    -o-animation-duration: 1.3s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: linear;
+    -o-transform: scale(0.7);
+    animation-name: bounceG;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    transform: scale(0.7);
+}
+/* End Style Login Modal */
+>>>>>>> 5118884718921686bc2e9965b844205a95a6747f

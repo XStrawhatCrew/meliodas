@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meliodas - Home</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/mytypo.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.9.0.js"></script>
+    <script src="js/myscript.js"></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <section class="container header-top">
+            <div class="row">
+                <div class="pull-right top-header">
+                    <div class="col-md-4 col-lg-4 col-sm-4 item-top-header">
+                        <div id="header-nav" class="custom left">
+                            <a href="#">Giới thiệu<span class="nav-separator"></span></a>
+                            <a href="#">Biểu phí<span class="nav-separator"></span></a>
+                            <a href="#">Hỗ trợ</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-6 item-top-header">
+                        <span>Hotline: 0984 434 34</span>
+                        <span>Phản ánh dịch vụ: windluffy@meliodas.vn</span>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-sm-2 item-top-header">
+                        <div id="header-auth" class="auth-area">
+                            <a href="#">Đăng nhập</a>
+                            <a href="#">Đăng ký</a>
+                            <div class="modal fade in" id="myModallogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+                                <div class="modal-dialog reset-password-block">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            <h4 class="modal-title" id="myModalLabel"><p class="red-normal">Đăng nhập</p>
+                                                <a href="" class="_openModalRegis">Đăng ký</a></h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form role="form" method="POST" class="fr-login" name="fr-login" id="frm-login-top">
+                                                    <div class="regis-item">
+                                                        <p class="red-normal re-error err-ajax"></p>
+                                                        <span class="normal name-label">Tài khoản<span class="red-normal"> * </span></span>
+                                                        <input name="credential" id="exampleInput" class="form-control form-myinput" type="text" placeholder="Tài khoản hoặc email đã kích hoạt">
+                                                        <p class="red-normal re-error err-cred"></p>
+                                                    </div>
+
+                                                    <div class="regis-item" style="padding: 0px; margin: 0px">
+                                                        <span class="normal name-label">Mật khẩu<span class="red-normal"> * </span></span>
+                                                        <input name="password" id="exampleInput" class="form-control form-myinput _inputPass" type="password" placeholder="Mật khẩu">
+                                                        <p class="red-normal re-error err-pass"></p>
+                                                    </div>
+                                                    <div class="regis-item made">
+                                                        <p class="_normal">
+                                                            <label class="normal">
+                                                                <input type="checkbox" class="login-checkbox col-lg-2 col-md-2 col-sm-2" id="remember" name="remember" checked="true">
+                                                                Ghi nhớ đăng nhập
+                                                            </label>
+                                                        </p>
+                                                        <button id="bt-login-top" type="button" class="btn btn-blue btn-lg btn-login pull-right" data-click="false">Đăng nhập</button>
+                                                        <button id="btnShow" type="button" class="btn btn-blue btn-lg btn-login pull-right disable _hide" data-click="false">Đang xử lý...</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a class="pull-left click-resetpass">Quên mật khẩu?</a>
+                                                <p class="normal facebook pull-right" style="cursor: pointer" onclick="fb_login()">Đăng nhập bằng facebook<span class="icon-facebook">login facebook</span></p>
+                                                <br>
+                                                <div class="reset-password _hide">
+                                                    <p class="normal email-text">Nhập email hoặc tên đăng nhập của bạn</p>
+                                                    <div id="submit_email_reset_pass">
+
+                                                        <div class="">
+                                                            <input id="_email_request" class="form-control form-myinput" type="text" placeholder="Vui lòng nhập email hoặc tên tài khoản trên SeuDo.vn">
+
+                                                        </div>
+                                                        <br>
+                                                        <input id="_csrf" name="_csrf" value="41bb23aec05c04b1222fc4c495f00034" type="hidden">
+                                                        <p class="reset-password-submit">
+                                                            <button class="btn btn-blue btn-login _request" type="button" data-id-form="submit_email_reset_pass" data-toggle="modal">
+                                                                Lấy lại mật khẩu
+                                                            </button>
+                                                            <button class="btn btn-blue btn-login _request_before disable hidden" type="button" data-toggle="modal">
+                                                                Lấy lại mật khẩu
+                                                            </button>
+                                                        </p>
+                                                        <div class="alert alert-info col-md-12 _notifForgotPass _hide">
+                                                            <p class="_notifForgot"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="loading-face" data-box="login" style="display: none">
+                                                <div id="facebookG">
+                                                    <div id="blockG_1" class="facebook_blockG">
+                                                    </div>
+                                                    <div id="blockG_2" class="facebook_blockG">
+                                                    </div>
+                                                    <div id="blockG_3" class="facebook_blockG">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="http://meliodas.vn">
+                    <img src="img/logo.png" />
+                </a>
+            </div>
+        </section>
+    </header>
+    <section id="main-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 nav-left">
+                    <ul class="nav-ul">
+                        <li>
+                            <a href="">
+                                <span class="glyphicon glyphicon-home"></span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Đặt hàng</a>
+                        </li>
+                        <li>
+                            <a href="">Nhờ vận chuyển</a>
+                        </li>
+                        <li>
+                            <a href="">Nguồn hàng công xưởng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="wrapper-body" class="container">
+        <div class="form-box text-center">
+            <div class="content-wrapper">
+                <div class="content-title">
+                    <div class="title">Đăng ký tài khoản</div>
+                    <p>Chưa nhận được email kích hoạt tài khoản, mời bạn click vào <a href="">ĐÂY</a></p>
+                </div>
+                <div class="content-main">
+                    <div class="registerButtons">
+                        <div class="userButtons">
+                            <form method="POST" action="" accept-charset="UTF-8" class="form-horizontal form-user" role="form">
+                                <div class="form-group ">
+                                    <label for="email" class="col-sm-3 control-label">Tài khoản <span class="text-danger">*</span></label>
+                                    <div class="col-sm-8">
+                                        <input autofocus="autofocus" class="form-control btn-flat" placeholder="Nhập tài khoản của bạn" name="email" type="text" value="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group ">
+                                    <label for="email" class="col-sm-3 control-label">Email <span class="text-danger">*</span></label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control btn-flat" placeholder="Nhập email của bạn" name="email" type="text" value="">
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="form-group ">
+                                    <label for="email" class="col-sm-3 control-label">Mật khẩu <span class="text-danger">*</span></label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control btn-flat" placeholder="Nhập mật khẩu của bạn" name="password" type="password" value="">
+                                        
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <label for="email" class="col-sm-3 control-label">Nhập lại mật khẩu <span class="text-danger">*</span></label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control btn-flat" placeholder="Nhập lại mật khẩu của bạn" name="repassword" type="password" value="">
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="full_name" class="col-sm-3 control-label">Họ tên/Điện thoại <span class="text-danger">*</span></label>
+                                    <div class="col-sm-4 ">
+                                        <input class="form-control btn-flat" placeholder="Nhập họ tên của bạn" name="full_name" type="text" value="">
+                                        
+                                    </div>
+                                    <div class="col-sm-4 ">
+                                        <input class="form-control btn-flat" placeholder="Nhập điện thoại của bạn" name="phone" type="text" value="">
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="gender" class="col-sm-3 control-label">Giới tính <span class="text-danger">*</span></label>
+                                    <div class="col-sm-8 text-left">
+                                        <div class="radio-inline">
+                                            <label><input checked="checked" name="gender" type="radio" value="1"> Nam</label>
+                                        </div>
+                                        <div class="radio-inline">
+                                            <label><input name="gender" type="radio" value="0"> Nữ</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="full_name" class="col-sm-3 control-label">Địa chỉ</label>
+                                    <div class="col-sm-8">
+                                        <textarea class="form-control btn-flat" placeholder="Số nhà" rows="1" name="address" cols="50"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="check" class="col-sm-3 control-label"></label>
+                                    <div class="col-sm-8">
+                                        <div class="btn-controls pull-right">
+                                            <input class="btn btn-register btn-flat btn-danger btn-sm" type="submit" value="Đăng ký">
+                                            <a class="btn btn-default btn-flat btn-sm" href="">Hủy</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-3 control-label"></label>
+                                    <div class="text-right col-sm-8">
+                                        <p>Nếu đã có tài khoản, <a href="">hãy đăng nhập</a></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="support-customer" class="support-customer-container">
+        <div class="sc-title">
+            <img src="img/hl_icon.png" />
+            <h2>Hỗ trợ khách hàng</h2>
+        </div>
+        <div class="sc-content">
+            <div class="sc-content-item">
+                <h3>Order hàng Quảng Châu</h3>
+                <div class="sc-content-item-content">
+                    <a href="skype:windluffy?chat">
+                        <img src="img/chatbutton_24px.png" />
+                    </a>
+                    <p>Quang Phong</p>
+                    <div class="clear"></div>
+                    <span>Điện thoại: 01689761127</span>
+                </div>
+            </div>
+            <div class="sc-content-item">
+                <h3>Order hàng Quảng Châu</h3>
+                <div class="sc-content-item-content">
+                    <a href="skype:windluffy?chat">
+                        <img src="img/chatbutton_24px.png" />
+                    </a>
+                    <p>Huy Nguyễn</p>
+                    <div class="clear"></div>
+                    <span>Điện thoại: 01689761127</span>
+                </div>
+            </div>
+            <div class="sc-content-item">
+                <h3>Order hàng Quảng Châu</h3>
+                <div class="sc-content-item-content">
+                    <a href="skype:windluffy?chat">
+                        <img src="img/chatbutton_24px.png" />
+                    </a>
+                    <p>Wind Phạm</p>
+                    <div class="clear"></div>
+                    <span>Điện thoại: 01689761127</span>
+                </div>
+            </div>
+            <div class="sc-content-item">
+                <h3>Order hàng Quảng Châu</h3>
+                <div class="sc-content-item-content">
+                    <a href="skype:windluffy?chat">
+                        <img src="img/chatbutton_24px.png" />
+                    </a>
+                    <p>Đắc Mười</p>
+                    <div class="clear"></div>
+                    <span>Điện thoại: 01689761127</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="support-customer-icon" class="support-customer-container">
+        <p>Hỗ trợ khách hàng</p>
+    </section>
+</body>
+</html>
